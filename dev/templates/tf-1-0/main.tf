@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 0.13.3"
+  required_version = "1.0.0"
 }
 
 module "s3" {
