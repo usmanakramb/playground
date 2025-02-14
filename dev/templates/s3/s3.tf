@@ -69,7 +69,7 @@ POLICY
 
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.website_bucket.bucket
-  key    = "index.html"
-  source = "../index.html"
+  key    = "index-stage2.html"
+  source = "../index-stage2.html"
   content_type = "text/html"
 }
