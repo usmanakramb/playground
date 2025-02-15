@@ -4,10 +4,10 @@ deploy:
   steps:
     terraformPlan:
       after:
-        - check_bucket_name.sh
+        - ./check_bucket_name.sh
 
 destroy:
   steps:
     terraformPlan:
       after:
-        - check_bucket_name.sh
+        - ./check_bucket_name.sh
