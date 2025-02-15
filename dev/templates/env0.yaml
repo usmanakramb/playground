@@ -4,8 +4,8 @@ deploy:
   steps:
     terraformPlan:
       after:
-        - terraform show -json .tf-plan >> tfplan.json
-        - cat tfplan.json | jq '.'
+#        - terraform show -json .tf-plan >> tfplan.json
+#        - cat tfplan.json | jq '.'
         - ./check_bucket_name.sh
 
 destroy:
