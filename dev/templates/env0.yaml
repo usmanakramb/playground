@@ -4,7 +4,8 @@ deploy:
   steps:
     terraformPlan:
       after:
-        - ./check_bucket_name.sh
+        - terraform show -json
+	- ./check_bucket_name.sh
 
 destroy:
   steps:
