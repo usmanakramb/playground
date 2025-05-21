@@ -20,7 +20,7 @@ provider "env0" {
 }
 
 data "env0_project" "default_project" {
-  name = My Project"
+  name = "My Project"
 }
 
 data "env0_ssh_key" "my_key" {
