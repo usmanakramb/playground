@@ -28,12 +28,13 @@ data "env0_project" "default_project" {
 #}
 
 resource "env0_template" "example" {
-  name        = "usman template"
-  description = "usman template"
-  repository  = "https://github.com/env0/templates"
-  path        = "aws/hello-world"
-  type        = "terraform"
-#  ssh_keys    = [data.env0_ssh_key.my_key]
+  name                = "usman template"
+  description         = "usman template"
+  repository          = "https://github.com/env0/templates"
+  path                = "aws/hello-world"
+  type                = "terraform"
+  terraform_version   = "1.5.7"
+#  ssh_keys           = [data.env0_ssh_key.my_key]
 }
 
 #resource "env0_template_project_assignment" "assignment" {
