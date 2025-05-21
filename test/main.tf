@@ -20,12 +20,12 @@ provider "env0" {
 }
 
 data "env0_project" "default_project" {
-  name = "My Project"
+  name = "usman"
 }
 
-data "env0_ssh_key" "my_key" {
-  name = "Secret Key"
-}
+#data "env0_ssh_key" "my_key" {
+#  name = "Secret Key"
+#}
 
 resource "env0_template" "example" {
   name        = "usman template"
@@ -33,7 +33,7 @@ resource "env0_template" "example" {
   repository  = "https://github.com/env0/templates"
   path        = "aws/hello-world"
   type        = "terraform"
-  ssh_keys    = [data.env0_ssh_key.my_key]
+#  ssh_keys    = [data.env0_ssh_key.my_key]
 }
 
 #resource "env0_template_project_assignment" "assignment" {
