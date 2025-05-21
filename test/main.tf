@@ -41,3 +41,7 @@ resource "env0_template" "example" {
 #  template_id = env0_template.example.id
 #  project_id  = data.env0_project.default_project.id
 #}
+
+output "template id" {
+    value = env0_template.example.id
+}
