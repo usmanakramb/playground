@@ -32,6 +32,7 @@ resource "env0_template" "example" {
   description = "usman template"
   repository  = "https://github.com/env0/templates"
   path        = "aws/hello-world"
+  type        = "terraform"
   ssh_keys    = [data.env0_ssh_key.my_key]
 }
 
