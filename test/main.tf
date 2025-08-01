@@ -31,7 +31,7 @@ resource "env0_template" "usman_template" {
   name                = "usman-template"
   description         = "usman-template"
   repository          = "https://github.com/env0/templates"
-  path                = "aws/hello-world"
+  path                = "misc/null-resource"
   type                = "terraform"
   terraform_version   = "1.5.7"
 }
