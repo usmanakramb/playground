@@ -21,12 +21,12 @@ variable "test-var1" {
   }
 }
 
-variable "test-var2" {
-  type = map(string)
-  default = {
-    test-var2 = "test-value2"
-  }
-}
+#variable "test-var2" {
+#  type = map(string)
+#  default = {
+#    test-var2 = "test-value2"
+#  }
+#}
 
 provider "env0" {
   api_key    = var.env0_api_key
@@ -63,13 +63,13 @@ resource "env0_environment" "usman_provider_example" {
     is_required = true
   }
 
-  configuration {
-    name = "test-var2"
-    value = "test-value2"
-    type = "terraform"
-    is_read_only = true
-    is_required = true
-  }
+#  configuration {
+#    name = "test-var2"
+#    value = "test-value2"
+#    type = "terraform"
+#    is_read_only = true
+#    is_required = true
+#  }
 }
 
 #resource "env0_template_project_assignment" "assignment" {
