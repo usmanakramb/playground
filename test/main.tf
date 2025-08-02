@@ -14,6 +14,20 @@ variable "env0_api_secret" {
   type    = string
 }
 
+variable "test-var1" {
+  type = map(string)
+  default = {
+    test-var1 = "test-value1"
+  }
+}
+
+variable "test-var2" {
+  type = map(string)
+  default = {
+    test-var2 = "test-value2"
+  }
+}
+
 provider "env0" {
   api_key    = var.env0_api_key
   api_secret = var.env0_api_secret
