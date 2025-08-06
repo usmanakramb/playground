@@ -33,6 +33,13 @@ provider "env0" {
   api_secret = var.env0_api_secret
 }
 
+provider "google" {
+  credentials = file("env0_credential_configuration.json")
+  project     = "env0project"
+  region      = "us-central1"
+  zone        = "us-central1-c"
+}
+
 data "env0_project" "default_project" {
   name = "usman"
 }
