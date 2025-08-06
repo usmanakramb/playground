@@ -40,6 +40,13 @@ provider "google" {
   zone        = "us-central1-c"
 }
 
+provider "google-beta" {
+  credentials = file("env0_credential_configuration.json")
+  project     = "env0project"
+  region      = "us-central1"
+  zone        = "us-central1-c"
+}
+
 data "env0_project" "default_project" {
   name = "usman"
 }
