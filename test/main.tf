@@ -34,7 +34,7 @@ provider "env0" {
 }
 
 provider "google" {
-  credentials = file("env0_credential_configuration.json")
+  credentials = file("env0_credential_configuration1.json")
   project     = "env0project"
   region      = "us-central1"
   zone        = "us-central1-c"
